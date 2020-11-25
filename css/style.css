@@ -1749,10 +1749,14 @@ a.move-top {
 	list-style: none;
 }
 
+
+
 .slider img {
-	width: 200%;
-	height: 200px;
-}
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	width: 80%;
+  }
 
 
 @keyframes cambio {

@@ -1726,10 +1726,10 @@ a.move-top {
   /*-- //Slider automatico --*/
 
 .slider {
-	width: 15%;
+	width: 50%;
 	margin: auto;
 	overflow: hidden;
-	margin-top: 15%;
+	margin-top: 50%;
 }
 
 .slider ul {

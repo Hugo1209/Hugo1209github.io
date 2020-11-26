@@ -1726,7 +1726,7 @@ a.move-top {
   /*-- //Slider automatico --*/
 
 .slider {
-	width: 50%;
+	width: 40%;
 	margin: auto;
 	overflow: hidden;
 	margin-top: 50%;
@@ -1745,10 +1745,9 @@ a.move-top {
 }
 
 .slider li {
-	width: 75%;
+	width: 80%;
 	list-style: none;
 }
-
 
 
 .slider img {
@@ -1759,7 +1758,7 @@ a.move-top {
 .container-all{
 	position: relative;
 	max-width: 1000px;
-	width: 100%;
+	width: 90%;
 	overflow: hidden;
 }
 
@@ -1777,6 +1776,16 @@ a.move-top {
 	
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
+
+	100% {margin-left: -400%;}
+	125% {margin-left: -400%;}
 }
 
 /*-- //Responsive design --*/
+
+
+
+/*-- //Gallery Ventana Emergente --*/
+
+
+

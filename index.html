@@ -14,10 +14,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 
 
-<!-- //Boton -->
-<TITLE></TITLE>
-
-
 
     <script>
         addEventListener("load", function () {
@@ -29,30 +25,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         }
     </script>
 	
-
-	<script>
-		function Enviar(correo){
-			var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
-			var esValido= expReg.test(correo);
-			if(esValido==true){
-				alert('Mensaje enviado correctamente');
-			}
-			esle{
-				alert('El correo electronico no es válido');
-			}
-		}
-
-
-	</script>
-
-
-
+	<script src="jquery/jquery-3-3-1.min.js"></script>
+	<script src="popper/popper.min.js"></script>
+	<script src="botstrap4/js/bootstrap.min.js"></script>
+	<spript src="codigo.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 
 	<!-- css files -->
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
     <link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
 	<link href="css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
+
 	<!-- //css files -->
 	
 	<link href="css/css_slider.css" type="text/css" rel="stylesheet" media="all">
@@ -65,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 
-<!-- header -->
+<!-- Encabezado -->
 <header>
 	<div class="container">
 		<!-- nav -->
@@ -87,7 +72,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- //nav -->
 	</div>
 </header>
-<!-- //header -->
+<!-- //Encabezado -->
 
 <!-- banner -->
 <section class="banner_w3lspvt" id="home">
@@ -178,26 +163,56 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				y grandes de trabajo, se como trabajar bajo presión, muy buenas relaciones personales, tengo la capacidad de solucionar cualquier problema en 
 				cualquier momento.</p>
 			</div>
+
 			<div class="col-lg-4 col-md-8 mt-lg-0 mt-5">
 				<div class="padding">
 					<img src="" class="img-fluid" alt="" />
-					<form action="#" method="post">
+					<form action="" class="formulario"  id="formulario">
+					<!--<form id ="form1" action="procesar.php" method="post" class= "needs-validation" novalidate>-->
 						<div class="form-style-agile">
-							<div class="row"><div class="col-12"><input placeholder="Nombre" name="name" type="text" required></div></div>
-							<div class="row"><div class="col-12"><input placeholder="Telefono" name="number" type="text" required></div></div>
-							<div class="row"><div class="col-12"><input placeholder="Email" type="text" name="direccionemail" required></div></div>
-							<div class="row"><div class="col-12"><input placeholder="Puesto" type="text" required></div></div>
-							
-							
 							<div class="row">
 								<div class="col-12">
-									<input type="reset"
+									<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+									<!--<i class="formulario__validacion-estado fas fa-times-circle"></i>-->
+								</div>
+								<!--<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>-->
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<!--<input type="tel" name="telefono" pattern="[0-8]{8}">-->
+									<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Tel 22225555" pattern="[0-8]{8}">
+									<!--<i class="formulario__validacion-estado fas fa-times-circle"></i>-->									
+								</div>
+								<!--<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>-->
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<input type="email" class="formulario__input" name="correo" id="correo" placeholder="Email">
+									<!--<i class="formulario__validacion-estado fas fa-times-circle"></i>-->
+								</div>
+								<!--<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>-->
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Puesto">
+									<!--<i class="formulario__validacion-estado fas fa-times-circle"></i>-->								
+								</div>
+								<!--<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>-->
+							</div>
+							
+		
+							<div class="row">
+								<div class="btn">
+									<button type="submit" 
 									name="button1"
-									value="Enviar" onclick="Enviar()">
+									value="Enviar" onclick="pulsar()">Enviar
 									</button>
+									<!--<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>-->
+									
 								</div>
 							</div>
 							
+
 
 						</div>
 					</form>
@@ -280,7 +295,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </section>
 <!-- //services -->
 
-<!-- footer -->
+<!-- pie de página -->
 <footer class="py-sm-5 py-4">
 	<div class="container py-md-3">
 		<div class="footer-logo text-center">
@@ -311,7 +326,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 </footer>
-<!-- footer -->
+<!-- pie de página -->
 
 <!-- copyright -->
 <div class="copyright py-3 text-center">

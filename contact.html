@@ -35,21 +35,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //google fonts -->
 	
 
-	<!-- //Boton -->
-	<TITLE></TITLE>
-	<SCRIPT languaje="JavaScript">
-	function pulsar() {
-	alert("Su mensaje fue enviado Satisfactoriamente");
-	}
-	</SCRIPT>
-
-
-
 
 </head>
 <body>
 
-<!-- header -->
+<!-- Encabezado -->
 <header>
 	<div class="container">
 		<!-- nav -->
@@ -71,7 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!-- //nav -->
 	</div>
 </header>
-<!-- //header -->
+<!-- //Encabezado -->
 
 <!-- banner -->
 <div class="inner-banner" id="home">
@@ -105,19 +95,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="row main-w3layouts-sectns">
 					<div class="col-lg-3 col-md-6 w3-btm-spc form-text1">
 						<label><span class="fa fa-user"></span> Nombre:</label>
-						<input type="text" name="Name" placeholder="Nombre" required="">
+						<!--<input type="text" name="Name" placeholder="Nombre" required="">-->
+						<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
 					</div>
 					<div class="col-lg-3 col-md-6 w3-btm-spc form-text2">
 						<label><span class="fa fa-phone"></span> Telefono:</label>
-						<input type="text" name="Phone no" placeholder="Telefono" required="">
+						<!--<input type="text" name="Phone no" placeholder="Telefono" required="">-->
+						<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Tel 22225555" pattern="[0-8]{8}">
 					</div>
 					<div class="col-lg-3 col-md-6 w3-btm-spc form-text1">
 						<label><span class="fa fa-envelope-open"></span> Email:</label>
-						<input type="email" name="email" placeholder="Email" required="">
+						<!--<input type="email" name="email" placeholder="Email" required="">-->
+						<input type="email" class="formulario__input" name="correo" id="correo" placeholder="Email">
 					</div>
 					<div class="col-lg-3 col-md-6 w3-btm-spc form-text2">
 						<label><span class="fa fa-pencil"></span> Puesto:</label>
-						<input type="text" name="subject" placeholder="Puesto" required="">
+						<!--<input type="text" name="subject" placeholder="Puesto" required="">-->
+						<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Puesto">
 					</div>
 				</div>
 				<div class="main-w3layouts-sectns ">
@@ -127,7 +121,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			
 				<FORM>
-					<INPUT type="reset"
+					<INPUT type="submit"
 					name="button1"
 					value="Enviar" onclick="pulsar()">
 				</FORM>
@@ -160,7 +154,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 
-<!-- footer -->
+<!-- pie de página -->
 <footer class="py-sm-5 py-4">
 	<div class="container py-md-3">
 		<div class="footer-logo text-center">
@@ -191,7 +185,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 </footer>
-<!-- footer -->
+<!-- pie de página -->
 
 <!-- copyright -->
 <div class="copyright py-3 text-center">

@@ -4,7 +4,7 @@ Nombre:	Hugo Leonardo Zamora Gonzalez
 
 Link Template: https://w3layouts.com/mens-salon-a-beauty-category-flat-bootstrap-responsive-web-template/
 
-Link Sitio Web GitHub Pages: https://hugo1209.github.io/Hugo1209github.io/
+Link Sitio Web GitHub Pages: Link: https://hugo1209.github.io/Hugo1209github.io/
 
 Descripción de cada una de las librerías:
 
